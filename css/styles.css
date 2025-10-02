@@ -796,7 +796,7 @@ ul {
   border-radius: 4px;
   width: 360px;
   height: 120px;
-  /* resize: none; */
+  resize: none;
   padding: 8px 16px;
   outline: none;
   transition: border-color 250ms linear;
@@ -843,6 +843,13 @@ ul {
   position: relative;
   display: flex;
   align-items: center;
+}
+.modal-input-label {
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+  margin-bottom: 4px;
 }
 
 .user-icon {
