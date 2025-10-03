@@ -761,14 +761,14 @@ ul {
   color: var(--navy-blue);
   margin-bottom: 16px;
 }
-
-.modal-input {
+.modal_field {
+  position: relative;
+  margin-bottom: 8px;
+}
+.modal_input {
   position: relative;
   display: flex;
   align-items: center;
-}
-
-.modal-input {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -776,29 +776,37 @@ ul {
   color: var(--light-slate);
   margin-bottom: 4px;
 }
-.modal-field {
-  margin-bottom: 8px;
-}
+
 .modal-input-label {
+  display: flex;
   font-size: 12px;
-  line-height: 1.167;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
   margin-bottom: 4px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.user-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  fill: var(--navy-blue);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .input-label {
   border: 1px solid var(--navy-blue-modal);
   border-radius: 4px;
   width: 360px;
   height: 40px;
   outline: none;
-  transition: border-color 250ms linear;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
-  padding: 10px 10px 10px 36px;
+  padding-left: 38px;
   font-size: 16px;
-  outline: none;
+  outline: transparent;
+  background-color: transparent;
 }
 .input-label:focus,
 .input-label:hover {
@@ -808,14 +816,18 @@ ul {
 .input-label-textarea {
   font-weight: 400;
   font-size: 12px;
-  border: 1px solid vvar(--navy-blue-modal);
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
   border-radius: 4px;
   width: 360px;
   height: 120px;
   resize: none;
   padding: 8px 16px;
-  outline: none;
-  transition: border-color 250ms linear;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 8px;
 }
 
@@ -831,11 +843,14 @@ ul {
   width: 16px;
   height: 16px;
   border-radius: 2px;
-  border: 1px solid var(--navy-blue-modal);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  fill: transparent;
 }
 
-.order-form-policy {
+.order_form_policy {
   margin-bottom: 24px;
 }
 
@@ -853,15 +868,6 @@ ul {
 }
 .privacy-policy {
   color: var(--iris);
-}
-
-.user-icon {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-  fill: var(--navy-blue);
 }
 
 .input-label:focus + .user-icon {
