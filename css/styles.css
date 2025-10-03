@@ -582,6 +582,7 @@ ul {
 .container-social-icon {
   display: flex;
   flex-direction: column;
+  margin-right: 80px;
 }
 
 .social-footer {
@@ -623,15 +624,9 @@ ul {
   background-color: var(--green);
 }
 
-.form {
+/* .e-mail-input {
   display: flex;
   flex-direction: column;
-}
-
-.e-mail-input {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
   justify-content: flex-end;
   margin-left: 80px;
 }
@@ -645,11 +640,11 @@ ul {
   margin-bottom: 16px;
 }
 
-.submit-btn {
+.form-label {
   display: flex;
 }
 
-.submit-btn .form-input {
+.form-label .form-input {
   font-family: var(--font-family);
   color: var(--white);
   width: 264px;
@@ -662,8 +657,7 @@ ul {
   border-radius: 4px;
   outline: none;
 }
-
-.submit-btn .form-btn {
+.form-label .form-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -687,6 +681,70 @@ ul {
 .form-btn:hover,
 .form-btn:focus {
   background-color: var(--ocean);
+} */
+
+/* Параграф */
+.subscribe-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+/* Форма */
+.subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+
+/* Label */
+.form-label {
+  display: block;
+}
+
+/* Поле вводу */
+.form-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.form-input::placeholder {
+  color: #ffffff;
+}
+
+/* Кнопка */
+.form-btn {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Іконка */
+.send-icon {
+  margin-left: 16px;
 }
 
 /* -------- MODAL SECTION -------- */
