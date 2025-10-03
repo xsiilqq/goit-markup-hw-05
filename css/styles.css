@@ -775,7 +775,7 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .modal-input-label {
@@ -852,7 +852,6 @@ ul {
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: #404bbf;
   border: none;
-  fill: #f4f4fd;
 }
 
 .order-form-policy {
@@ -886,6 +885,9 @@ ul {
 
 .send-btn {
   display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
@@ -893,13 +895,10 @@ ul {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: var(--iris);
   font-family: var(--font-family);
-  font-weight: 500px;
-  font-size: 16px;
-  line-height: 1.5px;
   letter-spacing: 0.04em;
   color: var(--white);
   margin-right: auto;
   margin-left: auto;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
