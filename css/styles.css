@@ -766,7 +766,7 @@ ul {
 }
 .modal-field {
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .modal-input {
   position: relative;
@@ -777,7 +777,6 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
-  margin-bottom: 8px;
 }
 
 .modal-input-label {
