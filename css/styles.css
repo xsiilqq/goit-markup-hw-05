@@ -727,11 +727,6 @@ ul {
   left: 50%; */
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-field {
-  margin-bottom: 8px;
-}
-
 .modal-close-btn {
   position: absolute;
   padding: 0;
@@ -744,9 +739,9 @@ ul {
   border: rgba(0, 0, 0, 0.1);
   height: 24px;
   width: 24px;
-  border-radius: 100%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .modal-close-btn:hover,
@@ -755,7 +750,8 @@ ul {
   fill: var(--white);
   border: none;
 }
-.titel-modal {
+
+.title-modal {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
@@ -766,13 +762,30 @@ ul {
   margin-bottom: 16px;
 }
 
-.modal-input-form {
+.modal-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.modal-input {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
   margin-bottom: 4px;
+}
+.modal-field {
+  margin-bottom: 8px;
+}
+.modal-input-label {
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+  margin-bottom: 4px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-label {
@@ -784,7 +797,6 @@ ul {
   transition: border-color 250ms linear;
   width: 100%;
   padding: 10px 10px 10px 36px;
-
   font-size: 16px;
   outline: none;
 }
@@ -812,10 +824,6 @@ ul {
   border-color: var(--iris);
 }
 
-.privacy-polici {
-  color: var(--iris);
-}
-
 .order-from-own-checkbox {
   display: inline-flex;
   align-items: center;
@@ -832,28 +840,19 @@ ul {
 }
 
 .order-form-policy-checkbox:checked
-  + .order-form-check-box-label
+  + .order-from-check-box-label
   .order-from-own-checkbox {
   background-color: var(--iris);
 }
-.order-form-check-box-label {
+
+.order-from-check-box-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
 }
-
-.modal-input {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.modal-input-label {
-  font-size: 12px;
-  line-height: 1.167;
-  letter-spacing: 0.04em;
-  color: var(--light-slate);
-  margin-bottom: 4px;
+.privacy-policy {
+  color: var(--iris);
 }
 
 .user-icon {
@@ -863,7 +862,6 @@ ul {
   transform: translateY(-50%);
   pointer-events: none;
   fill: var(--navy-blue);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-label:focus + .user-icon {
